@@ -1,0 +1,112 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace cSharp01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("simple Multipication write three numbers");
+            //Console.Write("Write the first number: ");
+            //int number1 = int.Parse(Console.ReadLine());
+            //Console.Write("Write the second number: ");
+            //int number2 = int.Parse(Console.ReadLine());
+            //Console.Write("Write the third number: ");
+            //int number3 = int.Parse(Console.ReadLine());
+            ////Console.Write("Write the forth number: ");
+            ////int number4 = int.Parse(Console.ReadLine());
+
+            //int math1 = (number1 + number2)*number3;
+            //int math2 = (number1 * number2) + (number2 * number3);
+
+            //Console.WriteLine($"Result of specified numbers {number1}, {number2} and {number3}, (x+y).z is {math1} and x.y + y.z is {math2}");
+
+            convertN();
+
+            Console.ReadKey();
+
+            
+
+        }
+
+        static void convertN()
+        {
+            
+            string st = Console.ReadLine();
+            StringBuilder s = new StringBuilder(st);
+            char s1, s2;
+          
+
+            st = s.ToString();
+
+            if(st.Length == 3)
+            {
+                s[2] = st[0];
+                s[0] = st[2];
+            }
+            if (st.Length == 4)
+            {
+                s[3] = st[0];
+                s[0] = st[3];
+            }
+            if (st.Length == 5)
+            {
+                s[4] = st[0];
+                s[0] = st[4];
+            }
+            if (st.Length == 6)
+            {
+                s[5] = st[0];
+                s[0] = st[5];
+            }
+            if (st.Length == 7)
+            {
+                s[6] = st[0];
+                s[0] = st[6];
+            }
+            if (st.Length == 8)
+            {
+                s[7] = st[0];
+                s[0] = st[7];
+            }
+            if (st.Length == 9)
+            {
+                s[8] = st[0];
+                s[0] = st[8];
+            }
+            if (st.Length == 10)
+            {
+                s[9] = st[0];
+                s[0] = st[9];
+            }
+            if (st.Length == 2)
+            {
+                Console.WriteLine("please write more than 2 words ");
+            }
+
+            if (st.Length >= 11)
+                Console.WriteLine("ERROR!, please make sure your name is less than 10 words, \n we dont exept more than 10 words, thanks for your understanding");
+
+
+
+
+
+            Console.WriteLine(s);
+
+        }
+
+        //static string remove_char(string str, int n)
+        //{
+          
+        //    return str.Remove(str,n);
+        //}
+
+        
+        
+
+    }
+}
